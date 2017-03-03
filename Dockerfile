@@ -26,6 +26,8 @@ LABEL description "cocotb"
 
 ARG VERSION=5d6aee2
 
+RUN apt-get install -y python-dev
+
 WORKDIR /tmp
 RUN git clone https://github.com/potentialventures/cocotb
 WORKDIR cocotb
